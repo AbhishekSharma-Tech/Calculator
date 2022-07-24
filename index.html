@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js' defer></script>
+
+    <!-- Bootstrap CDN -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-text color-font">
+              CALCULATOR
+            </span>
+        </div>
+    </nav>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>      <!-- data-* custom attributes to select things in JS -->
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="btn btn-danger">AC</button>
+        <button data-operation class="btn btn-info">%</button>
+        <button data-delete class="btn btn-warning">DEL</button>
+        <button data-operation class="btn btn-info">÷</button>
+
+        <button data-number class="btn btn-secondary">7</button>
+        <button data-number class="btn btn-secondary">8</button>
+        <button data-number class="btn btn-secondary">9</button>
+        <button data-operation class="btn btn-info">*</button>
+
+        <button data-number class="btn btn-secondary">4</button>
+        <button data-number class="btn btn-secondary">5</button>
+        <button data-number class="btn btn-secondary">6</button>
+        <button data-operation class="btn btn-info">-</button>
+
+        <button data-number class="btn btn-secondary">1</button>
+        <button data-number class="btn btn-secondary">2</button>
+        <button data-number class="btn btn-secondary">3</button>
+        <button data-operation class="btn btn-info">+</button>
+
+        <button data-number class="btn btn-secondary">00</button>
+        <button data-number class="btn btn-secondary">0</button>
+        <button data-number class="btn btn-secondary">.</button>
+        <button data-equals class="btn btn-success">=</button>
+    </div>
+</body>
+</html>
